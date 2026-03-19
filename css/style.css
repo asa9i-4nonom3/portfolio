@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+/* 全体 */
+
+body {
+  background-color: #DCDCDC;
+}
+
+#profile h2,
+#skill h2,
+#works h2,
+#contact h2 {
+  font-size: 36px;
+  font-family: cursive;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.wrapper {
+  margin-left: 200px;
+  margin-right: 200px;
+  font-family: 'メイリオ', 'Meiryo';
+}
+
+
+
+/* ヘッダー */
+
+#header {
+  position: sticky;
+  top: 0;
+  background-color: #BDD9D7;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'メイリオ', 'Meiryo';
+  z-index: 1000;
+}
+
+#header h1 {
+  line-height: 1.5;
+  margin-left: 100px;
+}
+
+#menu {
+  margin-right: 100px;
+
+}
+
+#menu a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu li {
+  display: inline;
+  margin: 0 10px;
+}
+
+
+
+/* メイン */
+
+#main {
+  width: 100%;
+}
+
+#main-pic {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* 画像（背景） */
+#main-pic .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+}
+
+/* テキスト（上に固定） */
+.main-text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  z-index: 10;
+}
+
+.main-text h1 {
+  font-size: 36px;
+  padding: 16px;
+}
+
+.main-text p {
+  font-size: 24px;
+}
+
+/* 1枚目 */
+.pic1 {
+  animation: fade1 15s infinite;
+}
+
+/* 2枚目 */
+.pic2 {
+  animation: fade2 15s infinite;
+}
+
+/* 1枚目 */
+@keyframes fade1 {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 2枚目 */
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* 自己紹介 */
+
+#profile {
+  background-color: #EAA8A8;
+  width: 100%;
+  height: 400px;
+  scroll-margin-top: 80px
+}
+
+
+
+/* 自分にできること */
+
+#skill {
+  background-color: #F7F0E5;
+  width: 100%;
+  height: 400px;
+  scroll-margin-top: 80px
+}
+
+/* 制作物 */
+
+#works {
+  margin-bottom: 200px;
+  scroll-margin-top: 80px
+}
+
+#works .works-title {
+  height: 200px;
+}
+
+/* 作品 */
+
+#works .work {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#works .reversed {
+  flex-direction: row-reverse;
+}
+
+#works .work-pic {
+  background-color: #F3DC6A;
+  width: 48%;
+  height: 500px;
+  margin: 8px;
+  border-radius: 30px;
+}
+
+#works .work-text {
+  background-color: #BEDBED;
+  width: 425px;
+  height: 500px;
+  margin: 8px;
+  padding: 24px;
+  border-radius: 30px;
+  font-family: 'メイリオ', 'Meiryo';
+}
+
+#works .work-text h3 {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 24px;
+  font-family: "HG丸ｺﾞｼｯｸM-PRO";
+}
+
+
+/* お問い合わせ */
+
+#contact {
+  background-color: #EAA8A8;
+  width: 100%;
+  height: 400px;
+  scroll-margin-top: 80px
+}
+
+/* フッター */
+
+#footer {
+  background-color: #BDD9D7;
+  width: 100%;
+  height: 80px;
+
+}
+
+
+
+/* スマホバージョン */
+
+@media (max-width: 900px) {
+
+  /* 全体 */
+
+  .wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+
+
+  /* メイン */
+  #main-pic {
+    height: 500px;
+  }
+
+  .main-text h1 {
+    font-size: 24px;
+    padding: 16px;
+  }
+
+  .main-text p {
+    font-size: 18px;
+  }
+
+
+
+  /* 自己紹介 */
+
+  #profile {
+    height: 500px;
+  }
+
+  /* 自分にできること */
+
+  #skill {
+    height: 500px;
+  }
+
+  /* 制作物 */
+
+  /* 作品 */
+
+  #works .work {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+
+  #works .work:last-child {
+    padding-bottom: 0;
+  }
+
+
+  #works .work-pic,
+  #works .work-text {
+    width: 84%;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+
+
+  #works .work-pic {
+    border-radius: 30px 30px 0 0;
+  }
+
+  #works .work-text {
+    border-radius: 0 0 30px 30px;
+  }
+
+
+
+
+
+
+}
