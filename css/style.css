@@ -180,10 +180,11 @@ p {
 .main-text h1 {
   font-size: 36px;
   padding: 16px;
-}
-
-.main-text p {
-  font-size: 24px;
+  text-shadow:
+  1px 1px 0 white, -1px -1px 0 white, /* 右下方向に影 */
+  -1px 1px 0 white,  1px -1px 0 white, /* 左下方向に影 */
+  1px 0 0 white, -1px  0 0 white, /* 左上方向に影 */
+  0 1px 0 white,  0 -1px 0 white; /* 右上方向に影 */
 }
 
 /* 1枚目 */
