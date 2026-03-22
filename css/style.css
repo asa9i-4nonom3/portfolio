@@ -6,6 +6,10 @@ body {
   background-color: #DCDCDC;
 }
 
+p {
+  line-height: 1.5;
+}
+
 #profile h2,
 #skill h2,
 #works h2,
