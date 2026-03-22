@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>(仮)Portfolio</title>
-    <link rel="icon" href="img/favicon.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="icon" href="img/favicon.jpg">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,33 +15,46 @@
 
 <body>
 
+
   <!-- ヘッダー -->
   <header id="header">
     <h1>
       Shinonome Asagi<br>
       Portfolio</h1>
 
-    <div id="menu">
+    <div id="menu" class="pc-menu">
+    <nav>
       <ul>
-        <a href="#profile">
-          <li>About Me</li>
-        </a>
-        <a href="#skill">
-          <li>Skill</li>
-        </a>
-        <a href="#works">
-          <li>Works</li>
-        </a>
-        <a href="#contact">
-          <li>Contact</li>
-        </a>
-
-
-
+        <li><a href="#profile">About Me</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+    </nav>
+    </div>
+
+    <div class="sp-menu">
+      <span class="material-symbols-outlined" id="open">menu</span>
     </div>
 
   </header>
+
+  <div class="overlay">
+    <span class="material-symbols-outlined" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="#profile">About Me</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+
+
+
 
   <!-- メイン -->
   <main id="main">
@@ -52,22 +66,44 @@
 
       <div class="main-text">
         <h1>『　イメージを形にする　』</h1>
-        <p>ああああああああああ</p>
       </div>
     </div>
 
     <!-- 自己紹介 -->
     <section id="profile">
       <h2 class="wrapper">About Me</h2>
-      <img>
-      <p class="wrapper">あああああああああああああああああああああ</p>
+      <div class="profile-area">
+        <img src="img/profile.png" class="profile-img">
+        <p class="wrapper">
+          兵庫県在住。<br>
+          <br>
+          趣味はアニメ鑑賞、読書、音楽を聴くこと、歌うこと。<br>
+          <br>
+          未経験からプログラミングの勉強を始めました。<br>
+          まだまだ勉強中の身ではありますが、皆様の理想のイメージを形にするお手伝いができるよう、1つ1つの課題に真摯に取り組み、丁寧な制作を心がけます。
+        </p>
+      </div>
     </section>
 
     <!-- 自分にできること -->
 
     <section id="skill">
       <h2 class="wrapper">Skill</h2>
-      <p class="wrapper">あああああああああああああああああああああ</p>
+      <div class="wrapper skill-area">
+        <div class="skill-1">
+          <h3>Coding</h3>
+          <p>HTML / CSS を使用した、基本的なコーディングが可能です。<br>
+            現在 JavaScript も勉強中です。
+          </p>
+        </div>
+        <div class="skill-2">
+          <h3>Figma</h3>
+          <p>ワイヤーフレーム作成を行っています。<br>
+            余白や全体の配置のバランスを意識しています。
+          </p>
+        </div>
+      </div>
+
 
     </section>
 
@@ -81,8 +117,9 @@
       <!-- 作品① -->
 
       <div class="work">
-        <div class="work-pic">
-          <img>
+        <div class="work-pics">
+          <img src="img/app1.png" class="work-pic-1">
+          <img src="img/app2.png" class="work-pic-2">
         </div>
 
         <div class="work-text">
@@ -93,8 +130,9 @@
 
       <!-- 作品② -->
       <div class="work reversed">
-        <div class="work-pic">
-          <img>
+        <div class="work-pics">
+          <img src="img/bicycle1.png" class="work-pic-1">
+          <img src="img/bicycle2.png" class="work-pic-2">
         </div>
 
         <div class="work-text">
@@ -106,8 +144,9 @@
 
       <!-- 作品③ -->
       <div class="work">
-        <div class="work-pic">
-          <img>
+        <div class="work-pics">
+          <img src="img/blog1.png" class="work-pic-1">
+          <img src="img/blog2.png" class="work-pic-2">
         </div>
 
         <div class="work-text">
@@ -119,8 +158,9 @@
 
       <!-- 作品④-->
       <div class="work reversed">
-        <div class="work-pic">
-          <img>
+        <div class="work-pics">
+          <!-- <img src="img/app1.png" class="work-pic-1"> -->
+          <!-- <img src="img/app2.png" class="work-pic-2"> -->
         </div>
 
         <div class="work-text">
