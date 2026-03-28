@@ -181,10 +181,14 @@ p {
   font-size: 36px;
   padding: 16px;
   text-shadow:
-  1px 1px 0 white, -1px -1px 0 white, /* 右下方向に影 */
-  -1px 1px 0 white,  1px -1px 0 white, /* 左下方向に影 */
-  1px 0 0 white, -1px  0 0 white, /* 左上方向に影 */
-  0 1px 0 white,  0 -1px 0 white; /* 右上方向に影 */
+    1px 1px 0 white, -1px -1px 0 white,
+    /* 右下方向に影 */
+    -1px 1px 0 white, 1px -1px 0 white,
+    /* 左下方向に影 */
+    1px 0 0 white, -1px 0 0 white,
+    /* 左上方向に影 */
+    0 1px 0 white, 0 -1px 0 white;
+  /* 右上方向に影 */
 }
 
 /* 1枚目 */
@@ -303,12 +307,12 @@ p {
 /* 制作物 */
 
 #works {
-  margin-bottom: 200px;
+  margin-bottom: 146px;
   scroll-margin-top: 80px
 }
 
 #works .works-title {
-  height: 200px;
+  height: 146px;
 }
 
 /* 作品 */
@@ -327,7 +331,7 @@ p {
 #works .work-pics {
   background-color: #F3DC6A;
   width: 48%;
-  height: 500px;
+  height: 300px;
   margin: 8px;
   border-radius: 30px;
   display: flex;
@@ -345,13 +349,10 @@ p {
   min-width: 125px;
 }
 
-
-
-
 #works .work-text {
   background-color: #BEDBED;
   width: 425px;
-  height: 500px;
+  height: 300px;
   margin: 8px;
   padding: 24px;
   border-radius: 30px;
@@ -365,6 +366,14 @@ p {
   font-family: "HG丸ｺﾞｼｯｸM-PRO";
 }
 
+#works .work-comment {
+  display: flex;
+  align-items: center;
+  height: 204px;
+}
+
+
+
 
 /* お問い合わせ */
 
@@ -375,13 +384,48 @@ p {
   scroll-margin-top: 80px
 }
 
+#contact .contact-area {
+  display: flex;
+  justify-content: center;
+}
+
+#contact .contact-area .wrapper {
+  margin: 50px 0 0 0;
+  width: 450px;
+}
+
+
+#contact .contact-img {
+  width: 300px;
+  height: 300px;
+}
+
+.contact-area1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-area1 #mail {
+  font-size: 64px;
+  line-height: 1.5;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
 /* フッター */
 
 #footer {
   background-color: #BDD9D7;
   width: 100%;
   height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#footer small {
+  font-size: 8px;
 }
 
 
@@ -396,6 +440,10 @@ p {
     width: 80%;
     max-width: 525px;
     margin: 0 auto;
+  }
+
+  p.wrapper {
+    font-size: 14px;
   }
 
   /* ヘッダー */
@@ -454,7 +502,6 @@ p {
     width: 80%;
     max-width: 525px;
     margin: 0 auto;
-
   }
 
 
@@ -492,8 +539,18 @@ p {
     padding-bottom: 16px;
   }
 
+  #skill .skill-area p {
+    font-size: 14px;
+  }
+
+
 
   /* 制作物 */
+
+  #works .work-comment {
+    justify-content: center;
+    height: 154px;
+  }
 
 
 
@@ -541,8 +598,37 @@ p {
     border-radius: 0 0 30px 30px;
   }
 
+  #works .work-comment {
+    font-size: 14px;
+  }
 
 
+  /* 問い合わせ */
+
+  #contact {
+    height: 500px;
+  }
+
+  #contact .contact-area {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #contact .contact-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  #contact .contact-area1 {
+    width: 100%;
+  }
+
+  #contact .contact-area .wrapper {
+    width: 80%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
 
 
 
