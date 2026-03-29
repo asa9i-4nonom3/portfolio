@@ -143,6 +143,7 @@ p {
 
 #main {
   width: 100%;
+  scroll-margin-top: 80px; 
 }
 
 #main-pic {
