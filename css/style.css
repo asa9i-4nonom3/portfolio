@@ -366,6 +366,41 @@ p {
   font-family: "HG丸ｺﾞｼｯｸM-PRO";
 }
 
+#works .work-text a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+
+  /* 動き用 */
+  transition: transform 0.3s ease;
+}
+
+/* 下線（最初は見えない） */
+#works .work-text a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: black;
+
+  /* 下線のアニメーション */
+  transition: width 0.3s ease;
+}
+
+/* ホバー時 */
+#works .work-text a:hover {
+  transform: translateY(-3px); /* ふわっと上に */
+}
+
+#works .work-text a:hover::after {
+  width: 100%; /* 下線が広がる */
+}
+
+
 #works .work-comment {
   display: flex;
   align-items: center;
@@ -391,7 +426,7 @@ p {
 
 #contact .contact-area .wrapper {
   margin: 50px 0 0 0;
-  width: 450px;
+  width: 400px;
 }
 
 
@@ -401,8 +436,18 @@ p {
 }
 
 .contact-area1 a {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   color: inherit;
+
+  /* 動き用 */
+  transition: transform 0.3s ease;
+}
+
+/* ホバー時 */
+.contact-area1 a:hover {
+  transform: translateY(-3px); /* ふわっと上に */
 }
 
 .contact-area1 #mail {
@@ -427,7 +472,6 @@ p {
 #footer small {
   font-size: 8px;
 }
-
 
 
 /* スマホバージョン */
