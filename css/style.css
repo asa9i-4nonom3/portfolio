@@ -143,7 +143,7 @@ p {
 
 #main {
   width: 100%;
-  scroll-margin-top: 80px; 
+  scroll-margin-top: 80px;
 }
 
 #main-pic {
@@ -342,12 +342,12 @@ p {
 
 #works .work-pics .work-pic-1 {
   width: 40%;
-  min-width: 200px;
+  min-width: 240px;
 }
 
 #works .work-pics .work-pic-2 {
   width: 25%;
-  min-width: 125px;
+  min-width: 150px;
 }
 
 #works .work-text {
@@ -393,11 +393,13 @@ p {
 
 /* ホバー時 */
 #works .work-text a:hover {
-  transform: translateY(-3px); /* ふわっと上に */
+  transform: translateY(-3px);
+  /* ふわっと上に */
 }
 
 #works .work-text a:hover::after {
-  width: 100%; /* 下線が広がる */
+  width: 100%;
+  /* 下線が広がる */
 }
 
 
@@ -447,7 +449,8 @@ p {
 
 /* ホバー時 */
 .contact-area1 a:hover {
-  transform: translateY(-3px); /* ふわっと上に */
+  transform: translateY(-3px);
+  /* ふわっと上に */
 }
 
 .contact-area1 #mail {
@@ -593,12 +596,8 @@ p {
 
   #works .work-comment {
     justify-content: center;
-    height: 154px;
+    font-size: 14px;
   }
-
-
-
-  /* 作品 */
 
   #works .work {
     display: block;
@@ -625,16 +624,15 @@ p {
   }
 
   #works .work-pics .work-pic-1 {
-    width: 40%;
+    width: 55%;
     min-width: 0;
-    max-width: 200px;
-
+    max-width: 297px;
   }
 
   #works .work-pics .work-pic-2 {
-    width: 25%;
+    width: 35%;
     min-width: 0;
-    max-width: 125px;
+    max-width: 189px;
   }
 
 
@@ -642,9 +640,7 @@ p {
     border-radius: 0 0 30px 30px;
   }
 
-  #works .work-comment {
-    font-size: 14px;
-  }
+
 
 
   /* 問い合わせ */
