@@ -338,6 +338,12 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: transform 0.3s ease; /* ← ふわっとさせる */
+}
+
+#works .work-pics:hover {
+  transform: translateY(-10px); /* ← 上に少し動く */
 }
 
 #works .work-pics .work-pic-1 {
@@ -348,6 +354,14 @@ p {
 #works .work-pics .work-pic-2 {
   width: 25%;
   min-width: 150px;
+}
+
+.work-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 #works .work-text {
@@ -604,6 +618,10 @@ p {
     margin: 0 auto;
     padding-bottom: 16px;
   }
+
+#works .work-pics:hover {
+  transform: none;
+}
 
   #works .work:last-child {
     padding-bottom: 0;
