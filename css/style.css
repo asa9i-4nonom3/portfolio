@@ -339,11 +339,13 @@ p {
   justify-content: center;
   align-items: center;
 
-  transition: transform 0.3s ease; /* ← ふわっとさせる */
+  transition: transform 0.3s ease;
+  /* ← ふわっとさせる */
 }
 
 #works .work-pics:hover {
-  transform: translateY(-10px); /* ← 上に少し動く */
+  transform: translateY(-10px);
+  /* ← 上に少し動く */
 }
 
 #works .work-pics .work-pic-1 {
@@ -451,6 +453,10 @@ p {
   height: 300px;
 }
 
+.contact-area1 {
+  text-align: center;
+}
+
 .contact-area1 a {
   position: relative;
   display: inline-block;
@@ -471,8 +477,6 @@ p {
   font-size: 64px;
   line-height: 1.5;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
 }
 
 /* フッター */
@@ -619,9 +623,9 @@ p {
     padding-bottom: 16px;
   }
 
-#works .work-pics:hover {
-  transform: none;
-}
+  #works .work-pics:hover {
+    transform: none;
+  }
 
   #works .work:last-child {
     padding-bottom: 0;
